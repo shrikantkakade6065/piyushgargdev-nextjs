@@ -8,9 +8,8 @@
   position: relative;
 }
 
-.portfolio__item div {
-  background: transparent;
-}
+
+
 
 .portfolio__item h6 {
   color: var(--site-theme-color);

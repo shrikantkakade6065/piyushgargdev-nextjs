@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --site-theme-color: #01d293;
+* {
+  box-sizing: border-box;
 }
 
 html,
@@ -188,16 +188,18 @@ footer {
   bottom: 0;
   left: 0;
 }
+
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+/* top right*/
 .ribbon-top-left span {
   right: -25px;
+  border: #171f38;
   top: 30px;
   transform: rotate(-45deg);
-}
-
-/* top right*/
-.ribbon-top-right {
-  top: -10px;
-  right: -10px;
 }
 .ribbon-top-right::before,
 .ribbon-top-right::after {
